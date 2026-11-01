@@ -1,0 +1,93 @@
+# ==============================================================================
+# Git Ignore for Hardware/FPGA (Verilog, Vivado, Icarus) & Software Project
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Vivado & Xilinx Temporary Files, Logs & Crash Reports
+# ------------------------------------------------------------------------------
+.Xil/
+*.jou
+*.log
+*.str
+*.pb
+*.backup.jou
+*.backup.log
+webtalk*
+usage_statistics_webtalk.*
+
+# Vivado project workspaces & auto-generated directories
+Vivado_Workspaces/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.gen/
+
+# Synthesis & implementation reports
+reports/
+*.rpt
+
+# Batch automation Vivado projects
+vivado_project/
+
+# Checkpoints and bitstreams
+*.dcp
+*.bit
+*.bin
+*.mcs
+*.ltx
+
+# Vivado Simulator (xsim)
+xsim.dir/
+xsim*.log
+xsim*.jou
+xelab*
+xvlog*
+xvhdl*
+
+# ------------------------------------------------------------------------------
+# HDL Simulation & Waveforms (Icarus Verilog, ModelSim, SAIF)
+# ------------------------------------------------------------------------------
+*.vvp
+*.vcd
+*.fst
+*.wdb
+*.saif
+
+# ------------------------------------------------------------------------------
+# C / C++ Compiled Binaries (Golden Model)
+# ------------------------------------------------------------------------------
+*.exe
+*.o
+*.obj
+*.out
+*.dll
+*.so
+*.dylib
+*.a
+
+# ------------------------------------------------------------------------------
+# Python
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.venv/
+venv/
+env/
+
+# ------------------------------------------------------------------------------
+# Operating System & Editor Files
+# ------------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*~
